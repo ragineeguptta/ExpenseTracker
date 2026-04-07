@@ -1,0 +1,17 @@
+﻿@model ExpenseViewModel
+
+<h2>Add Expense</h2>
+
+<form asp-action="Create">
+    <div class="mb-3">
+        <label>Amount</label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Category</label>
+        <input asp-for="Category" class="form-control" />
+    </div>
+
+    <button class="btn btn-success">Save</button>
+</form>
